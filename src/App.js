@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Provider } from 'react-redux';
-import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Greetings from './Greetings';
-import store from '../redux/configureStore';
-import { fetchdata } from '../redux/reactrails/actions';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Greetings from './components/Greetings';
+import store from './redux/configureStore';
 
 const App = () => (
   <div className="App">

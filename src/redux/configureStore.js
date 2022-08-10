@@ -4,11 +4,11 @@ import {
   legacy_createStore as createStore,
   applyMiddleware,
 } from 'redux';
-import {greetingReducer} from './reactrails/greetings';
+import { greetingReducer } from './greetings/greetings';
 
 const initState = {};
 const rootredcuer = combineReducers({
-    greetingReducer,
+  greetingReducer,
 });
 const store = createStore(rootredcuer, initState, applyMiddleware(thunk));
 export default store;
