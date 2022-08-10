@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Implement a connection between a Ruby on Rails back-end and React front-end. Generate randome greetings from Database and display using API.Project with two apps
 
-
+[Back-end](https://github.com/sentayhu19/hello-rails-back-end)
 ## Built With
 
 - HTML
