@@ -3,7 +3,7 @@ import { FETCHDATA, fetchdata } from './actions';
 const axios = require('axios');
 
 const getDataAPI = () => async (dispatch) => {
-  await axios.get('/v1/greetings').then((res) => {
+  await axios.get('http://127.0.0.1:3000/v1/greetings').then((res) => {
     dispatch(fetchdata(res.data));
   }).catch(() => {
     // dispatch(fetchdataerror());
@@ -16,7 +16,7 @@ const initState = {
 export const greetingReducer = (state = initState, action) => {
   switch (action.type) {
     case FETCHDATA:
-      console.log('action.type', action);
+
       return {
         ...state,
         greetings: action.payload,
